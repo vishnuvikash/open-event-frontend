@@ -4893,7 +4893,7 @@ ember-cli-autoprefixer@0.8.1:
     broccoli-autoprefixer "^5.0.0"
     lodash "^4.0.0"
 
-ember-cli-babel@6.12.0, ember-cli-babel@^5.0.0, ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.6, ember-cli-babel@^5.1.7, ember-cli-babel@^5.2.4, ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.10.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.14.1, ember-cli-babel@^6.16.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.0, ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.2.0, ember-cli-babel@^7.4.0, ember-cli-babel@^7.5.0, ember-cli-babel@~7.1.2:
+ember-cli-babel@6.12.0, ember-cli-babel@^5.0.0, ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.6, ember-cli-babel@^5.1.7, ember-cli-babel@^5.2.4, ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.10.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.14.1, ember-cli-babel@^6.16.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2, ember-cli-babel@^6.9.0, ember-cli-babel@^7.0.0, ember-cli-babel@^7.1.0, ember-cli-babel@^7.1.2, ember-cli-babel@^7.2.0, ember-cli-babel@^7.5.0, ember-cli-babel@^7.6.0, ember-cli-babel@~7.1.2:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.14.1.tgz#796339229035910b625593caffbc2683792ada68"
   dependencies:
@@ -5673,18 +5673,21 @@ ember-drag-drop@^0.6.0:
   dependencies:
     ember-cli-babel "^6.6.0"
 
-ember-exam@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/ember-exam/-/ember-exam-2.0.2.tgz#1aa566e314c79e03903641ad260f3e746d6a0e4d"
-  integrity sha512-wLXfJE3tBVWsYo///2hq2peaABPUsnZRTimffdRbEoEfFstiVJ8Lu+zLdoxCmbrL6TiV+T9+X3262bXYyls0yw==
+ember-exam@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ember-exam/-/ember-exam-2.1.1.tgz#cb8957e80e3c539b2fe955f4fdc952b3daf9f9dc"
+  integrity sha512-jKvH5T984jDDWunE2vqiYOU6lsgxzNtkBFOYh7gODtR4QX1rB8vQdecAO+STPZOaJkuCiaETCXJLNwBohFTN7Q==
   dependencies:
     chalk "^2.1.0"
     cli-table3 "^0.5.1"
     debug "^4.1.0"
-    ember-cli-babel "^7.4.0"
+    ember-cli-babel "^7.6.0"
     execa "^1.0.0"
     fs-extra "^7.0.1"
+    js-yaml "^3.13.0"
     rimraf "^2.6.2"
+    semver "^5.6.0"
+    silent-error "^1.1.1"
 
 ember-export-application-global@^2.0.0:
   version "2.0.0"
@@ -8761,6 +8764,14 @@ js-yaml@^3.12.1:
   version "3.12.2"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
   integrity sha512-QHn/Lh/7HhZ/Twc7vJYQTkjuCa0kaCcDcjK5Zlk2rvnUpy7DxMJ23+Jc2dcyvltwQVg1nygAVlB2oRDFHoRS5Q==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
+  integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -12588,6 +12599,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/silent-error/-/silent-error-1.1.0.tgz#2209706f1c850a9f1d10d0d840918b46f26e1bc9"
+  dependencies:
+    debug "^2.2.0"
+
+silent-error@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/silent-error/-/silent-error-1.1.1.tgz#f72af5b0d73682a2ba1778b7e32cd8aa7c2d8662"
+  integrity sha512-n4iEKyNcg4v6/jpb3c0/iyH2G1nzUNl7Gpqtn/mHIJK9S/q/7MCfoO4rwVOoO59qPFIc0hVHvMbiOJ0NdtxKKw==
   dependencies:
     debug "^2.2.0"
 
